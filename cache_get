@@ -24,3 +24,4 @@ fi
 
 echo "cache_get: getting key: $CACHE_KEY_PREFIX/$CHK_SUM"
 cachr get "$CACHE_KEY_PREFIX/$CHK_SUM"
+rm "$CHK_SUM"
