@@ -17,7 +17,7 @@ if [[ ! "$COMMAND" || ! "$CACHE_KEY_PREFIX" || ! "$CACHE_ON_DIR" || ! "$CACHE_OU
   exit 1
 fi
 
-CHK_SUM=$(find $CACHE_ON_DIR -type f -exec $MD5_CMD {} \; | $MD5_CMD | cut -f1 -d ' ')
+CHK_SUM=$(find $CACHE_ON_DIR -type f -exec $MD5_CMD {} \; | sort | $MD5_CMD | cut -f1 -d ' ')
 
 echo "cache_run: calculated checksum on dir $CACHE_ON_DIR : $CHK_SUM"
 
