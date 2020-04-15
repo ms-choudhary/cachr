@@ -15,9 +15,9 @@ Buckets at which it saves the file is configured via ENV: CACHR_BUCKET & region 
 ### Usage
 
 ```
-cachr exists 'andromeda/assets/sha-a12d221daa23dfgh2'
+cachr exists 'app/assets/sha-a12d221daa23dfgh2'
 
-cachr save 'andromeda/assets/sha-a12d221daa23dfgh2' public/assets/ public/tmp/cache/assets/
+cachr save 'app/assets/sha-a12d221daa23dfgh2' public/assets/ public/tmp/cache/assets/
 
-cachr get 'andromeda/assets/sha-a12d221daa23dfgh2'
+cachr get 'app/assets/sha-a12d221daa23dfgh2'
 ```
