@@ -1,4 +1,4 @@
-package main
+package remote
 
 import (
 	"archive/zip"
@@ -8,7 +8,6 @@ import (
 )
 
 func addToZip(archive *zip.Writer, source string) error {
-
 	filepath.Walk(source, func(path string, info os.FileInfo, err error) error {
 		if err != nil {
 			return err
